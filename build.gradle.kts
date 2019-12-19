@@ -12,6 +12,8 @@ plugins {
 
     // Apply the application plugin to add support for building a CLI application
     application
+
+    `build-scan`
 }
 
 repositories {
@@ -43,7 +45,9 @@ val test by tasks.getting(Test::class) {
     useJUnitPlatform()
 }
 
-buildScan {
-    termsOfServiceUrl = "https://gradle.com/terms-of-service"
-    termsOfServiceAgree = "yes"
+if (System.getenv("CI") == "true") {
+    buildScan {
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
 }
