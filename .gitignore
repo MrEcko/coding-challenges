@@ -1,0 +1,27 @@
+#
+# Standard Gradle .gitignore
+#
+.gradle
+/build/
+# Gradle GUI config
+gradle-app.setting
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+# Cache of project
+.gradletasknamecache
+
+
+#
+# IntelliJ
+#
+*.iml
+.idea/*
+!.idea/runConfigurations/
+
+#
+# Visual Studio Code
+#
+.settings/
+.classpath
+.project
+.vscode/

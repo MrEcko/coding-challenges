@@ -13,3 +13,6 @@ World class coding challenges to master
 
 ## [Interviewbit](https://www.interviewbit.com/)
 
+## License
+
+This project is licensed under the MIT License- see the [LICENSE file](LICENSE) for details
