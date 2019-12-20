@@ -8,7 +8,6 @@ class BinaryGapTest extends Specification{
 
     @Shared private BinaryGap binaryGap = new BinaryGap();
 
-    @Unroll
     def "longest binary gap for the decimal no. #input / binary #inputInBinary is #expectedOutput"() {
         expect:
         binaryGap.solution(input) == expectedOutput
