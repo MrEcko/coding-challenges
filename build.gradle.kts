@@ -12,6 +12,12 @@ plugins {
 
     // Apply the application plugin to add support for building a CLI application
     application
+
+    // Enable gradle build-scan
+    `build-scan`
+
+    // Apply the groovy plugin to also add support for Groovy (needed for Spock)
+    groovy
 }
 
 repositories {
@@ -24,13 +30,12 @@ dependencies {
     // This dependency is used by the application.
     implementation("com.google.guava:guava:28.0-jre")
 
-    // Use JUnit Jupiter API for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.2")
+    // Use the latest Groovy version for Spock testing
+    testImplementation("org.codehaus.groovy:groovy-all:2.5.7")
 
-    // Use JUnit Jupiter Engine for testing.
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.5.2")
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.5.2")
+    // Use the awesome Spock testing and specification framework even with Java
+    testImplementation("org.spockframework:spock-core:1.3-groovy-2.5")
+    testImplementation("junit:junit:4.12")
 }
 
 application {
@@ -38,12 +43,9 @@ application {
     mainClassName = "world.coding.challenges.App"
 }
 
-val test by tasks.getting(Test::class) {
-    // Use junit platform for unit tests
-    useJUnitPlatform()
-}
-
-buildScan {
-    termsOfServiceUrl = "https://gradle.com/terms-of-service"
-    termsOfServiceAgree = "yes"
+if (System.getenv("CI") == "true") {
+    buildScan {
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
 }
