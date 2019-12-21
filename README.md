@@ -9,6 +9,7 @@ World class coding challenges to master
 - [OddOccurrencesInArray](src/main/java/world/coding/challenges/codility/OddOccurrencesInArray.java) - Find value that occurs in odd number of elements.
 - [CyclicRotation](src/main/java/world/coding/challenges/codility/CyclicRotation.java) - Rotates an array to the right by a given number of steps
 - [FrogJmp](src/main/java/world/coding/challenges/codility/FrogJmp.java) - Count minimal number of jumps from position X to Y
+- [PermMissingElem](src/main/java/world/coding/challenges/codility/PermMissingElem.java) - Find the missing element in a given permutation.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
