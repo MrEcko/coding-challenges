@@ -10,6 +10,7 @@ World class coding challenges to master
 - [CyclicRotation](src/main/java/world/coding/challenges/codility/CyclicRotation.java) - Rotates an array to the right by a given number of steps
 - [FrogJmp](src/main/java/world/coding/challenges/codility/FrogJmp.java) - Count minimal number of jumps from position X to Y
 - [PermMissingElem](src/main/java/world/coding/challenges/codility/PermMissingElem.java) - Find the missing element in a given permutation.
+- [TapeEquilibrium](src/main/java/world/coding/challenges/codility/TapeEquilibrium.java) - Minimise the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
