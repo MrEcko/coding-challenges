@@ -11,6 +11,7 @@ World class coding challenges to master
 - [FrogJmp](src/main/java/world/coding/challenges/codility/FrogJmp.java) - Count minimal number of jumps from position X to Y
 - [PermMissingElem](src/main/java/world/coding/challenges/codility/PermMissingElem.java) - Find the missing element in a given permutation.
 - [TapeEquilibrium](src/main/java/world/coding/challenges/codility/TapeEquilibrium.java) - Minimise the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|
+- [PermCheck](src/main/java/world/coding/challenges/codility/PermCheck.java) - Check whether array A is a permutation.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
