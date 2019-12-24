@@ -10,7 +10,7 @@ class PermCheckTest extends Specification {
     private PermCheck permCheck = new PermCheck();
 
     @Unroll
-    def "PermMissingElem"() {
+    def "PermCheck"() {
         expect:
         permCheck.solution(input as int[]) == expectedOutput
 

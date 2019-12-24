@@ -13,6 +13,7 @@ World class coding challenges to master
 - [TapeEquilibrium](src/main/java/world/coding/challenges/codility/TapeEquilibrium.java) - Minimise the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|
 - [PermCheck](src/main/java/world/coding/challenges/codility/PermCheck.java) - Check whether array A is a permutation.
 - [FrogRiverOne](src/main/java/world/coding/challenges/codility/FrogRiverOne.java) - Find the  earliest time when a frog can jump to the other side of a river.
+- [MaxCounters](src/main/java/world/coding/challenges/codility/MaxCounters.java) - Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
