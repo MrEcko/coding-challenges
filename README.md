@@ -15,6 +15,7 @@ World class coding challenges to master
 - [FrogRiverOne](src/main/java/world/coding/challenges/codility/FrogRiverOne.java) - Find the  earliest time when a frog can jump to the other side of a river.
 - [MaxCounters](src/main/java/world/coding/challenges/codility/MaxCounters.java) - Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.
 - [MissingInteger](src/main/java/world/coding/challenges/codility/MissingInteger.java) - Find  the smallest positive integer that does not occur in a given sequence.
+- [PassingCars](src/main/java/world/coding/challenges/codility/PassingCars.java) - Count the number of passing cars on the road.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
