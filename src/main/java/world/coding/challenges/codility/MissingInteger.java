@@ -31,27 +31,26 @@ public class MissingInteger {
      * @param A  array A
      * @return 1 if array {@param A} is a permutation and 0 if it is not.
      * A permutation is a sequence containing each element from 1 to N once, and only once.
+     * TODO see 100% solutions https://pbedn.github.io/post/2017-codility-demo-test/
      */
     public int solution(int[] A) {
         int output = 0;
-        int max = IntStream.of(A).boxed().max(Integer::compareTo).orElse(0);
-        if (max<=0){
-            output = 1;
-        } else{
-            //if there is any gap, pick it
-            Set<Integer> input = IntStream.of(A).boxed().collect(Collectors.toSet());
-            for (int i = 1; i <= max; i++){
-                if (!input.contains(i)){
-                    output = i;
-                    break;
-                }
-            }
+        int N = A.length;
+        int[] countOccurences = new int[N+1];
 
-            //if there is was no gap, next min is max+1
-            if (output == 0){
-                output = ++max;
+        for (int i=0; i<N; i++){
+            if (A[i] > 0 && A[i] <= N){
+                countOccurences[A[i]]++;
             }
-
+        }
+        for (int i=1; i<=N; i++){
+            if (countOccurences[i] == 0){
+                output = i;
+                break;
+            }
+        }
+        if (output == 0){
+            output = N+1;
         }
         return output;
     }
