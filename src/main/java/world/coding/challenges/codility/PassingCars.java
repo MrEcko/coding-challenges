@@ -44,14 +44,33 @@ public class PassingCars {
 
     public int solution(int[] A) {
         int output = 0;
-        //brute force N^2
-        for (int i=0; i<A.length-1; i++){
-            for (int j=i; j<A.length;j++){
-                if (A[i]==0 && A[j] == 1){
-                    output++;
-                }
+
+        //suffix sum
+        int[] carsGoWest = new int[A.length + 1];
+        for (int i = A.length - 1; i >= 0; i--) {
+            if (carGoesWest(A[i])) { //here's another car
+                carsGoWest[i] = carsGoWest[i + 1] + 1;
+            } else { // number stays the same
+                carsGoWest[i] = carsGoWest[i + 1];
             }
         }
+        for (int i = 0; i < A.length; i++) {
+            if (carGoesEast(A[i])) {
+                output += carsGoWest[i];
+            }
+        }
+
+        if (Math.abs(output) > 1000000000) {
+            output = -1;
+        }
         return output;
+    }
+
+    boolean carGoesWest(int carDirection) {
+        return carDirection == 1;
+    }
+
+    boolean carGoesEast(int carDirection) {
+        return carDirection == 0;
     }
 }
