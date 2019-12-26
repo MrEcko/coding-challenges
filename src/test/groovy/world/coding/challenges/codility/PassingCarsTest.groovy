@@ -11,6 +11,8 @@ class PassingCarsTest extends Specification {
     def "PassingCars"() {
         expect:
         passingCars.solution(input as int[]) == expectedOut
+        passingCars.solution2(input as int[]) == expectedOut
+
         where:
         input           || expectedOut
         [0, 1, 0, 1, 1] || 5

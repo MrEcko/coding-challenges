@@ -66,6 +66,32 @@ public class PassingCars {
         return output;
     }
 
+
+    public int solution2(int[] A) {
+        int output = 0;
+
+        //prefix sum
+        int[] carsGoEast = new int[A.length + 1];
+        for (int i = 0; i < A.length; i++) {
+            if (carGoesEast(A[i])) { //here's another car
+                carsGoEast[i+1] = carsGoEast[i] + 1;
+            } else { // number stays the same
+                carsGoEast[i+1] = carsGoEast[i];
+            }
+        }
+
+        for (int i = 0; i < A.length; i++) {
+            if (carGoesWest(A[i])) {
+                output += carsGoEast[i+1];
+            }
+        }
+
+        if (Math.abs(output) > 1000000000) {
+            output = -1;
+        }
+        return output;
+    }
+
     boolean carGoesWest(int carDirection) {
         return carDirection == 1;
     }
