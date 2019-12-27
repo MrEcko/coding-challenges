@@ -20,7 +20,8 @@ World class coding challenges to master
 - [MissingInteger](src/main/java/world/coding/challenges/codility/MissingInteger.java) - Find  the smallest positive integer that does not occur in a given sequence.
 
 - [PassingCars](src/main/java/world/coding/challenges/codility/PassingCars.java) - Count the number of passing cars on the road.
-- [GenomicRangeQuery](src/main/java/world/coding/challenges/codility/GenomicRangeQuery.java) - Find the minimal nucleotide from a range of sequence DNA. 
+- [GenomicRangeQuery](src/main/java/world/coding/challenges/codility/GenomicRangeQuery.java) - Find the minimal nucleotide from a range of sequence DNA.
+- [MinAvgTwoSlice](src/main/java/world/coding/challenges/codility/MinAvgTwoSlice.java) - Find the minimal average of any slice containing at least two elements.  
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
