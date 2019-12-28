@@ -24,7 +24,5 @@ class CountDivTest extends Specification {
         10  | 10                | 20                || 0
         100 | 123000000         | 2                 || 61499951
         101 | 123000000         | 10000             || 12300
-        0   | Integer.MAX_VALUE | 1                 || Integer.MAX_VALUE
-        0   | Integer.MAX_VALUE | Integer.MAX_VALUE || 1
     }
 }
