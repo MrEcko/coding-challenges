@@ -24,6 +24,8 @@ World class coding challenges to master
 - [MinAvgTwoSlice](src/main/java/world/coding/challenges/codility/MinAvgTwoSlice.java) - Find the minimal average of any slice containing at least two elements.
 - [CountDiv](src/main/java/world/coding/challenges/codility/CountDiv.java) - Compute number of integers divisible by k in range [a..b].
 
+- [MaxProductOfThree](src/main/java/world/coding/challenges/codility/MaxProductOfThree.java) - Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
+
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
 ## [Leetcode](https://leetcode.com/)
