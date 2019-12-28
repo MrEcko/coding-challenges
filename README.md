@@ -21,7 +21,8 @@ World class coding challenges to master
 
 - [PassingCars](src/main/java/world/coding/challenges/codility/PassingCars.java) - Count the number of passing cars on the road.
 - [GenomicRangeQuery](src/main/java/world/coding/challenges/codility/GenomicRangeQuery.java) - Find the minimal nucleotide from a range of sequence DNA.
-- [MinAvgTwoSlice](src/main/java/world/coding/challenges/codility/MinAvgTwoSlice.java) - Find the minimal average of any slice containing at least two elements.  
+- [MinAvgTwoSlice](src/main/java/world/coding/challenges/codility/MinAvgTwoSlice.java) - Find the minimal average of any slice containing at least two elements.
+- [CountDiv](src/main/java/world/coding/challenges/codility/CountDiv.java) - Compute number of integers divisible by k in range [a..b].
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
