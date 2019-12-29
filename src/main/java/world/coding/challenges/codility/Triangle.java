@@ -21,7 +21,7 @@ public class Triangle {
                 int a = A[p];
                 int b = A[p+1];
                 int c = A[p+2];
-                if (a+b>c){
+                if ((long)a+b>c){
                     output++;
                     break;
                 }
