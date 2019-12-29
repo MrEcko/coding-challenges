@@ -25,6 +25,8 @@ World class coding challenges to master
 - [CountDiv](src/main/java/world/coding/challenges/codility/CountDiv.java) - Compute number of integers divisible by k in range [a..b].
 
 - [MaxProductOfThree](src/main/java/world/coding/challenges/codility/MaxProductOfThree.java) - Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
+- [Distinct](src/main/java/world/coding/challenges/codility/Distinct.java) - Compute number of distinct values in an array.
+
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
