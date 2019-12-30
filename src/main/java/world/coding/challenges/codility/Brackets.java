@@ -3,6 +3,9 @@ package world.coding.challenges.codility;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+ */
 public class Brackets {
     public int solution(String S) {
         int output = 0;

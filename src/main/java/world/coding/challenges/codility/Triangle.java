@@ -2,6 +2,9 @@ package world.coding.challenges.codility;
 
 import java.util.Arrays;
 
+/**
+ * https://app.codility.com/programmers/lessons/6-sorting/triangle/
+ */
 public class Triangle {
     public int solution(int[] A) {
         //0<=P<Q<R<N
