@@ -27,7 +27,10 @@ World class coding challenges to master
 - [MaxProductOfThree](src/main/java/world/coding/challenges/codility/MaxProductOfThree.java) - Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
 - [Distinct](src/main/java/world/coding/challenges/codility/Distinct.java) - Compute number of distinct values in an array.
 - [Triangle](src/main/java/world/coding/challenges/codility/Triangle.java) - Determine whether a triangle can be built from a given set of edges.
+TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
 
+Brackets
+- [Brackets](src/main/java/world/coding/challenges/codility/Brackets.java) - Determine whether a given string of parentheses (multiple types) is properly nested.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
