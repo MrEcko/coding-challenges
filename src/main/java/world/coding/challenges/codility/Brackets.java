@@ -8,47 +8,29 @@ import java.util.Deque;
  */
 public class Brackets {
     public int solution(String S) {
-        int output = 0;
-        int n = S.length();
-        if (n > 0 && n % 2 == 0){
-            Deque<Character> stackOfOpenings = new ArrayDeque<>();
-            boolean allValid = true;
-            print("last: "+S.charAt(n-1));
-            for (int i=0; i<S.length(); i++){
-                char c = S.charAt(i);
-                print("the c: " + c);
-                if (isOpening(c)){
-                    stackOfOpenings.addFirst(c);
-                    print("c: " + c + " -> " + stackOfOpenings);
-                    allValid = false;
-                } else{
-                    Character previousC = stackOfOpenings.peekFirst();
-                    print("current c: " + c+ " previousC: " + previousC);
-                    if (previousC == null || !isCorrectNesting(previousC,c)){
-                        allValid = false;
-                        break;
-                    } else{
-                        stackOfOpenings.removeFirst();
-                        allValid= true;
-                    }
-                }
+        Deque<Character> stack = new ArrayDeque<>();
+        for(int i = 0; i < S.length(); i++) {
+            char c = S.charAt(i);
+            switch (c) {
+                case ')':
+                    if (stack.isEmpty() || stack.pop() != '(')
+                        return 0;
+                    break;
+                case ']':
+                    if (stack.isEmpty() || stack.pop() != '[')
+                        return 0;
+                    break;
+                case '}':
+                    if(stack.isEmpty() || stack.pop() != '{')
+                        return 0;
+                    break;
+                default:
+                    stack.push(c);
+                    break;
             }
-            output = allValid ? 1 : 0;
         }
-        return output;
+
+        return stack.isEmpty() ? 1 : 0;
     }
 
-    void print (Object o){
-        // System.out.println(o);
-    }
-
-    boolean isOpening(char c){
-        return c == '(' || c == '['  || c == '{';
-    }
-
-    boolean isCorrectNesting(char start, char end){
-        return (start == '(' && end == ')') ||
-            (start == '[' && end == ']') ||
-            (start == '{' && end == '}');
-    }
 }
