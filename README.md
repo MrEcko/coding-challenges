@@ -31,7 +31,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 - [Brackets](src/main/java/world/coding/challenges/codility/Brackets.java) - Determine whether a given string of parentheses (multiple types) is properly nested.
 - [Fish](src/main/java/world/coding/challenges/codility/Fish.java) -N voracious fish are moving along a river. Calculate how many fish are alive.
-- [Nesting](src/main/java/world/coding/challenges/codility/Nesting.java) -N voracious fish are moving along a river. Calculate how many fish are alive.
+- [Nesting](src/main/java/world/coding/challenges/codility/Nesting.java) - Determine whether a given string of parentheses (single type) is properly nested.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
