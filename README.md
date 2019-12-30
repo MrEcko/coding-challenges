@@ -29,8 +29,8 @@ World class coding challenges to master
 - [Triangle](src/main/java/world/coding/challenges/codility/Triangle.java) - Determine whether a triangle can be built from a given set of edges.
 TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
 
-Brackets
 - [Brackets](src/main/java/world/coding/challenges/codility/Brackets.java) - Determine whether a given string of parentheses (multiple types) is properly nested.
+- [Fish](src/main/java/world/coding/challenges/codility/Fish.java) -N voracious fish are moving along a river. Calculate how many fish are alive.
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
