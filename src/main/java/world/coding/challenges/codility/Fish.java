@@ -2,6 +2,9 @@ package world.coding.challenges.codility;
 
 import java.util.*;
 
+/**
+ * https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
+ */
 public class Fish {
     private static final int UP = 0;
     private static final int DOWN = 1;
