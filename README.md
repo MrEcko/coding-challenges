@@ -34,6 +34,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [Nesting](src/main/java/world/coding/challenges/codility/Nesting.java) - Determine whether a given string of parentheses (single type) is properly nested.
 - [StoneWall](src/main/java/world/coding/challenges/codility/StoneWall.java) - Cover "Manhattan skyline" using the minimum number of rectangles
 
+- [Dominator](src/main/java/world/coding/challenges/codility/Dominator.java) - Find an index of an array such that its value occurs at more than half of indices in the array.
+
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
 ## [Leetcode](https://leetcode.com/)
