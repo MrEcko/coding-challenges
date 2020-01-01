@@ -35,6 +35,9 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [StoneWall](src/main/java/world/coding/challenges/codility/StoneWall.java) - Cover "Manhattan skyline" using the minimum number of rectangles
 
 - [Dominator](src/main/java/world/coding/challenges/codility/Dominator.java) - Find an index of an array such that its value occurs at more than half of indices in the array.
+- EquiLeader
+
+- [MaxProfit](src/main/java/world/coding/challenges/codility/MaxProfit.java) - Given a log of stock prices compute the maximum possible earning 
 
 ## [Hackerrank](https://www.hackerrank.com/dashboard)
 
