@@ -97,17 +97,6 @@ public class CommonJava {
                 "- watch out for input transformation to matrix - ex. how a type with a priority become a vector where the index meant the priority" +
                 "       going left to right could just stop because lowest priority was found";
 
-        //autoboxing & unboxing
-//        Primitive type	Wrapper class
-//        boolean	Boolean
-//        byte	Byte
-//        char	Character
-//        float	Float
-//        int	Integer
-//        long	Long
-//        short	Short
-//        double	Double
-
 //        The right way to remove objects from ArrayList while iterating over it is by using the Iterator's remove()
         List<Integer> arrayList = new ArrayList<>();
         arrayList.add(1);
