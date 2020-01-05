@@ -49,6 +49,12 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 ## [Interviewbit](https://www.interviewbit.com/)
 
+# System design
+
+## [Interviewbit](https://www.interviewbit.com/)
+
+- [Design Cache](design/DesignCache.md) - Design a distributed key value caching system, like Memcached or Redis.
+
 ## License
 
 This project is licensed under the MIT License- see the [LICENSE file](LICENSE) for details
