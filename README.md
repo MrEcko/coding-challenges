@@ -48,12 +48,21 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 ## [Codesignal](https://codesignal.com/)
 
 ## [Interviewbit](https://www.interviewbit.com/)
+- [ThreeSum](src/main/java/world/coding/challenges/interviewbit/ThreeSum.java) - Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
 
 # System design
 
 ## [Interviewbit](https://www.interviewbit.com/)
 
 - [Design Cache](design/DesignCache.md) - Design a distributed key value caching system, like Memcached or Redis.
+
+TODO:
+- Design Messenger
+- Design Twitter
+- Design Google search
+- Design URL Shortener 
+- Highly Available Database
+- Sharding a database
 
 ## License
 
