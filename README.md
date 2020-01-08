@@ -50,6 +50,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 ## [Interviewbit](https://www.interviewbit.com/)
 - [ThreeSum](src/main/java/world/coding/challenges/interviewbit/ThreeSum.java) - Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
 
+- [RotateMatrix](src/main/java/world/coding/challenges/interviewbit/RotateMatrix.java) - Rotate an image (2d matrix) by 90 degrees (clockwise)
+
 # System design
 
 ## [Interviewbit](https://www.interviewbit.com/)
