@@ -52,6 +52,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 - [RotateMatrix](src/main/java/world/coding/challenges/interviewbit/RotateMatrix.java) - Rotate an image (2d matrix) by 90 degrees (clockwise)
 
+- [ExcelColumnNumber](src/main/java/world/coding/challenges/interviewbit/ExcelColumnNumber.java) - Given a column title as appears in an Excel sheet, return its corresponding column number.
+
 # System design
 
 ## [Interviewbit](https://www.interviewbit.com/)
