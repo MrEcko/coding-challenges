@@ -55,6 +55,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [ExcelColumnNumber](src/main/java/world/coding/challenges/interviewbit/ExcelColumnNumber.java) - Given a column title as appears in an Excel sheet, return its corresponding column number.
 - [ExcelColumnTitle](src/main/java/world/coding/challenges/interviewbit/ExcelColumnTitle.java) - Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 
+- [InorderTraversal](src/main/java/world/coding/challenges/interviewbit/InorderTraversal.java) - in order traversal of a tree without using recursion 
 # System design
 
 ## [Interviewbit](https://www.interviewbit.com/)
