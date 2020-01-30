@@ -49,6 +49,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [Maximum69](src/main/java/world/coding/challenges/leetcode/easy/Maximum69.java) -  Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).
 - [DecompressRLEList](src/main/java/world/coding/challenges/leetcode/easy/DecompressRLEList.java) -  Return the decompressed list from a run-length encoding
 - [DefangingIpAddress](src/main/java/world/coding/challenges/leetcode/easy/DefangingIpAddress.java) -  Given a valid (IPv4) IP address, return a defanged version of that IP address.
+- [SumZero](src/main/java/world/coding/challenges/leetcode/easy/SumZero.java) -  Given an integer n, return any array containing n unique integers such that they add up to 0.
 
 ## [Codesignal](https://codesignal.com/)
 

@@ -1,5 +1,8 @@
 package world.coding.challenges.leetcode.easy;
 
+/**
+ * https://leetcode.com/problems/defanging-an-ip-address/
+ */
 public class DefangingIpAddress {
     public String defangIPaddr(String address) {
         StringBuilder output = new StringBuilder();
