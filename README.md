@@ -46,7 +46,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 ## [Leetcode](https://leetcode.com/)
 
 #### Easy:
-- [Ladder](src/main/java/world/coding/challenges/leetcode/easy/Maximum69.java) -  Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).
+- [Maximum69](src/main/java/world/coding/challenges/leetcode/easy/Maximum69.java) -  Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).
+- [DecompressRLEList](src/main/java/world/coding/challenges/leetcode/easy/DecompressRLEList.java) -  Return the decompressed list from a run-length encoding
 
 ## [Codesignal](https://codesignal.com/)
 
