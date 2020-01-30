@@ -51,7 +51,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [DefangingIpAddress](src/main/java/world/coding/challenges/leetcode/easy/DefangingIpAddress.java) -  Given a valid (IPv4) IP address, return a defanged version of that IP address.
 - [SumZero](src/main/java/world/coding/challenges/leetcode/easy/SumZero.java) -  Given an integer n, return any array containing n unique integers such that they add up to 0.
 - [SearchInBinarySearchTree](src/main/java/world/coding/challenges/leetcode/easy/SearchInBinarySearchTree.java) -  Given the root node of a binary search tree (BST) and a value. You need to find the node in the BST that the node's value equals the given value
-
+- [NumberOfRecentCalls](src/main/java/world/coding/challenges/leetcode/easy/NumberOfRecentCalls.java) - Write a class to count recent requests.  
 
 ## [Codesignal](https://codesignal.com/)
 
