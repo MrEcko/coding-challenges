@@ -54,6 +54,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [NumberOfRecentCalls](src/main/java/world/coding/challenges/leetcode/easy/NumberOfRecentCalls.java) - Write a class to count recent requests.  
 - [NaryTreePostorderTraversal](src/main/java/world/coding/challenges/leetcode/easy/NaryTreePostorderTraversal.java) - Given an n-ary tree, return the postorder traversal of its nodes' values.
 - [NaryTreePreorderTraversal](src/main/java/world/coding/challenges/leetcode/easy/NaryTreePreorderTraversal.java) - Given an n-ary tree, return the preorder traversal of its nodes' values.
+- [DeleteColumnsToMakeSorted](src/main/java/world/coding/challenges/leetcode/easy/DeleteColumnsToMakeSorted.java) - We are given an array A of N lowercase letter strings, all of the same length. Return the minimum possible value of deletion indices so each remaining column in A is in non-decreasing sorted order.
 
 ## [Codesignal](https://codesignal.com/)
 
