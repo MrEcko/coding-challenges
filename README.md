@@ -58,6 +58,9 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [ArrayPartition](src/main/java/world/coding/challenges/leetcode/easy/ArrayPartition.java) - Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.
 - [HeightChecker](src/main/java/world/coding/challenges/leetcode/easy/HeightChecker.java) - Return the minimum number of students that must move in order for all students to be standing in non-decreasing order of height.
 
+#### Medium:
+- [PreviousPermutationOneSwap](src/main/java/world/coding/challenges/leetcode/medium/PreviousPermutationOneSwap.java) - Given an array A of positive integers (not necessarily distinct), return the lexicographically largest permutation that is smaller than A, that can be made with one swap.
+
 ## [Codesignal](https://codesignal.com/)
 
 ## [Interviewbit](https://www.interviewbit.com/)
