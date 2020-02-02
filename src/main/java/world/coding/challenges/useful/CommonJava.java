@@ -15,7 +15,26 @@ public class CommonJava {
         NUCLEOTIDE_IMPACT_FACTORS = Collections.unmodifiableMap(map);
     }
 
+    void conversion(){
+
+        StringBuilder builder = new StringBuilder();
+        char c = 'x';
+        builder.append(c);
+
+        List<Integer> list = new ArrayList<>();
+        int[] ints = list.stream().mapToInt(i -> i).toArray();
+    }
+
     public static void main(String[] args) {
+        List<Integer> l = new LinkedList<>();
+        l.add(3);
+        l.add(2);
+        l.add(1);
+        for (Integer i : l){
+            System.out.println(i);
+        }
+        int n1 = 2/2, n2 = 3/2;
+        boolean  intIgnoresFractional = n1 == n2;
         int theMax = Math.max(3, 4);
 
         NUCLEOTIDE_IMPACT_FACTORS.get('a');
@@ -84,6 +103,8 @@ public class CommonJava {
             "- pay attention to what should happen to 0 or empty string - positive or negative resp??"+
             "- remember if sorting helps first or not" +
             "- remember -5 * -5 is 25" +
+            "- remember int 2/2 is same as 3/2" +
+            "- remember mixing index with length, subtract from size when assigning to index and viceversa"+
             "- consider MAX_INT especially for sums => use (float) cast when needed" +
             "- dominator (occurences>n/2) can be found at the middle of a sorted array" +
             "- test with big int numbers too (1b) (test with brute force for correct result if allowed)";
@@ -102,6 +123,11 @@ public class CommonJava {
         arrayList.add(1);
         arrayList.add(1);
         arrayList.add(2);
+
+
+        Collections.reverse(arrayList);
+
+        arrayList.set(0,11);
 
         arrayList.removeIf(loan -> loan.equals("personal loan"));
 
@@ -126,9 +152,12 @@ public class CommonJava {
         str.concat("Hello"); // O(n) operation. Creates another copy of the string as string is immutable.
         stringBuilder.append("Hello"); // O(l) operation where l is the length of the string being appended. Much more efficient.
 
+        stringBuilder.append("b").append("a").reverse().toString();
+
         min();
         sorting();
         queue();
+        heap();
         stacks();
         power();
     }
@@ -224,10 +253,12 @@ public class CommonJava {
         stack1.push('c');
         stack1.pop();
         stack1.peek();
+        Optional.empty();
+        boolean hasItems = !stack1.empty();
 
         Deque<Integer> stack = new ArrayDeque<>();
         //push
-        stack.addFirst(5);stack.addFirst(5);
+        stack.addFirst(5);
         //pop
         stack.removeFirst();
         //peek - nullable
@@ -236,7 +267,34 @@ public class CommonJava {
         stack.size();
     }
 
+    static void heap(){
+        PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
+
+
+
+        PriorityQueue<Integer> maxHeap2 = new PriorityQueue<>((Integer o1, Integer o2) -> (- Integer.compare(o1,o2)));
+
+        maxHeap2.add(1); //add element to the queue. O(log n)
+        maxHeap2.add(10);
+        maxHeap2.add(5);
+        Integer removed = maxHeap2.remove();//get and remove the min/max. O(log n)
+        maxHeap2.peek();//to get, but not remove the min/max. O(1)
+
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return - Integer.compare(o1,o2);
+            }
+        });
+
+    }
     static void queue(){
+
+//        ArrayDeque is Resizable-array implementation of the Deque interface.
+//        Array deques have no capacity restrictions; they grow as necessary to support usage
+//        Null elements are prohibited.
+//        ArrayDeque is likely to be faster than Stack when used as a stack,
+//        and faster than LinkedList when used as a queue.
         Deque<Integer> queue = new ArrayDeque<>();
         queue.addLast(4);queue.addLast(4);
 
@@ -257,8 +315,16 @@ public class CommonJava {
 
         queue.size();
 
+//        A LinkedList is already a queue, since it implements the Queue interface
+//     suitable when we don't know the size of data which we are going to use
+//        LinkedList supports null elements, whereas ArrayDeque does not
+//        Linked structures are possibly the worst structure to iterate with a cache miss on each element
+//        If you need add/remove of the both ends,
+//        ArrayDeque is significantly better than a linked list. Random access each element is also O(1) for a cyclic queue.
+
         LinkedList<String> queue1 = new LinkedList<>();
-        queue1.add("1");
+        queue1.add("1");//Appends the specified element to the end of this list
+        queue1.remove(); // Retrieves and removes the head (first element) of this list.
         queue1.poll();
         queue1.peek();
 
@@ -300,6 +366,7 @@ public class CommonJava {
         java.util.Arrays.sort(arr);
         List<String> list = new ArrayList<>();
         list.add("x");// O(1)
+        list.addAll(new ArrayList<>());
         list.add("a");
         list.set(1, "newValue");  // O(1)
         list.size();  // O(1) operation
@@ -367,5 +434,15 @@ public class CommonJava {
         return hash % MAX_SIZE;
     }
 
+
+    void cursor(){
+//        Iterator vs ListIterator
+//        - both being cursor, Iterator traverses elements only forwards
+//        - On the other hand, the ListIterator can traverse in both forward and backward directions.
+//            Using iterator you can not add any element to a collection. But, by using ListIterator you can add elements to a collection.
+//            Using Iterator, you can not remove an element in a collection where, as You can remove an element from a collection using ListIterator.
+//        Using Iterator you can traverse all collections like Map, List, Set. But, by ListIteror you can traverse List implemented objects only.
+//        You can retrieve an index of an element using Iterator. But as List is sequential and index-based you can retrieve an index of an element in using ListIterator.
+    }
 
 }
