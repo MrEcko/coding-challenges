@@ -37,6 +37,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [Dominator](src/main/java/world/coding/challenges/codility/Dominator.java) - Find an index of an array such that its value occurs at more than half of indices in the array.
 - EquiLeader
 
+- [TieRopes](src/main/java/world/coding/challenges/codility/TieRopes.java) - Tie adjacent ropes to achieve the maximum number of ropes of length >= K
+
 - [Ladder](src/main/java/world/coding/challenges/codility/Ladder.java) -  Count the number of different ways of climbing to the top of a ladder.
 
 - [MaxProfit](src/main/java/world/coding/challenges/codility/MaxProfit.java) - Given a log of stock prices compute the maximum possible earning 
