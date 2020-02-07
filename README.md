@@ -38,6 +38,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - EquiLeader
 
 - [TieRopes](src/main/java/world/coding/challenges/codility/TieRopes.java) - Tie adjacent ropes to achieve the maximum number of ropes of length >= K
+- [MaxNonoverlappingSegments](src/main/java/world/coding/challenges/codility/MaxNonoverlappingSegments.java) - Find a maximal set of non-overlapping segments.
+
 
 - [Ladder](src/main/java/world/coding/challenges/codility/Ladder.java) -  Count the number of different ways of climbing to the top of a ladder.
 
