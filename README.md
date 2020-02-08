@@ -81,6 +81,10 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 - [SetMatrixZeroes](src/main/java/world/coding/challenges/interviewbit/SetMatrixZeroes.java) - Given a matrix, A of size M x N of 0s and 1s. If an element is 0, set its entire row and column to 0.
  
+ ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
+ 
+- [MinCostPathDP6](src/main/java/world/coding/challenges/geeksforgeeks/MinCostPathDP6.java) - Given a cost matrix cost[][] and a position (m, n) in cost[][], write a function that returns cost of minimum cost path to reach (m, n) from (0, 0). 
+ 
 # System design
 
 ## [Interviewbit](https://www.interviewbit.com/)
