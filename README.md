@@ -83,6 +83,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
  
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  
+- [LongestIncreasingSubsequenceDP3](src/main/java/world/coding/challenges/geeksforgeeks/LongestIncreasingSubsequenceDP3.java) -  find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order
 - [MinCostPathDP6](src/main/java/world/coding/challenges/geeksforgeeks/MinCostPathDP6.java) - Given a cost matrix cost[][] and a position (m, n) in cost[][], write a function that returns cost of minimum cost path to reach (m, n) from (0, 0). 
  
 # System design
