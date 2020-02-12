@@ -83,6 +83,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 - [SwapListNodesInPairs](src/main/java/world/coding/challenges/interviewbit/SwapListNodesInPairs.java) - Given a linked list, swap every two adjacent nodes and return its head.
 - [RotateList](src/main/java/world/coding/challenges/interviewbit/RotateList.java) - Given a list, rotate the list to the right by k places, where k is non-negative.
+- [ReorderList](src/main/java/world/coding/challenges/interviewbit/ReorderList.java) - Reorder a singly linked list in place
  
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  
