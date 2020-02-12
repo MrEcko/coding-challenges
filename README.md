@@ -82,6 +82,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [SetMatrixZeroes](src/main/java/world/coding/challenges/interviewbit/SetMatrixZeroes.java) - Given a matrix, A of size M x N of 0s and 1s. If an element is 0, set its entire row and column to 0.
 
 - [SwapListNodesInPairs](src/main/java/world/coding/challenges/interviewbit/SwapListNodesInPairs.java) - Given a linked list, swap every two adjacent nodes and return its head.
+- [RotateList](src/main/java/world/coding/challenges/interviewbit/RotateList.java) - Given a list, rotate the list to the right by k places, where k is non-negative.
  
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  
