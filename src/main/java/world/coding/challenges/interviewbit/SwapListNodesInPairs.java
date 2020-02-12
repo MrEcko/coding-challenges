@@ -36,6 +36,21 @@ public class SwapListNodesInPairs {
         return head;
     }
 
+    public ListNode swapPairsEditorial(ListNode A) {
+        if(A == null || A.next == null) return A;
+        ListNode head = A.next, prev = null;
+        while(A != null && A.next != null) {
+            ListNode temp = A.next;
+            A.next = A.next.next;
+            temp.next = A;
+            if(prev != null) prev.next = temp;
+            prev = A;
+            A = A.next;
+
+        }
+        return head;
+    }
+
     static class ListNode {
         public int val;
         public ListNode next;
