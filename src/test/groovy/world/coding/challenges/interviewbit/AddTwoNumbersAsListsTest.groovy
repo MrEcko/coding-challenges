@@ -8,9 +8,6 @@ class AddTwoNumbersAsListsTest extends Specification {
     private static AddTwoNumbersAsLists solution = new AddTwoNumbersAsLists()
 
     def "AddTwoNumbersAsLists"() {
-        given:
-        AddTwoNumbersAsLists.ListNode theInput = toLinkedList(a as int[])
-
         when:
         AddTwoNumbersAsLists.ListNode output = solution.addTwoNumbers(toLinkedList(a as int[]), toLinkedList(b as int[]))
 

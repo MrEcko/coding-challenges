@@ -85,7 +85,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [RotateList](src/main/java/world/coding/challenges/interviewbit/RotateList.java) - Given a list, rotate the list to the right by k places, where k is non-negative.
 - [ReorderList](src/main/java/world/coding/challenges/interviewbit/ReorderList.java) - Reorder a singly linked list in place
 - [AddTwoNumbersAsLists](src/main/java/world/coding/challenges/interviewbit/AddTwoNumbersAsLists.java) -  digits are stored in reverse order and each of their nodes contain a single digit.
- 
+- [MergeTwoSortedLists](src/main/java/world/coding/challenges/interviewbit/MergeTwoSortedLists.java) -  Merge two sorted linked lists and return it as a new sorted list.
+
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  
 - [LongestIncreasingSubsequenceDP3](src/main/java/world/coding/challenges/geeksforgeeks/LongestIncreasingSubsequenceDP3.java) -  find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order
