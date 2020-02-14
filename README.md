@@ -87,6 +87,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [AddTwoNumbersAsLists](src/main/java/world/coding/challenges/interviewbit/AddTwoNumbersAsLists.java) -  digits are stored in reverse order and each of their nodes contain a single digit.
 - [MergeTwoSortedLists](src/main/java/world/coding/challenges/interviewbit/MergeTwoSortedLists.java) -  Merge two sorted linked lists and return it as a new sorted list.
 
+- [RecoverBinarySearchTree](src/main/java/world/coding/challenges/interviewbit/RecoverBinarySearchTree.java) - Two elements of a binary search tree (BST) are swapped, return the 2 values
+
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  
 - [LongestIncreasingSubsequenceDP3](src/main/java/world/coding/challenges/geeksforgeeks/LongestIncreasingSubsequenceDP3.java) -  find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order
