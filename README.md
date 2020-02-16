@@ -92,6 +92,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [MaxSumContiguousSubarray](src/main/java/world/coding/challenges/interviewbit/MaxSumContiguousSubarray.java) - Find the contiguous subarray within an array, A of length N which has the largest sum.
 
 - [GasStation](src/main/java/world/coding/challenges/interviewbit/GasStation.java) - Return the minimum starting gas station’s index if you can travel around the circuit once, otherwise return -1.
+- [MajorityElement](src/main/java/world/coding/challenges/interviewbit/MajorityElement.java) - Given an array of size n, find the majority element
 
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  

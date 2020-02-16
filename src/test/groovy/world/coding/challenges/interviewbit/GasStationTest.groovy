@@ -10,6 +10,7 @@ class GasStationTest extends Specification {
     def "GasStation"() {
         expect:
         solution.canCompleteCircuit(A, B) == expectedOut
+        solution.canCompleteCircuitEditorial(A, B) == expectedOut
 
         where:
         A            | B            || expectedOut
