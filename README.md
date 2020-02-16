@@ -95,6 +95,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [MajorityElement](src/main/java/world/coding/challenges/interviewbit/MajorityElement.java) - Given an array of size n, find the majority element
 - [DistributeCandy](src/main/java/world/coding/challenges/interviewbit/DistributeCandy.java) - minimum candies you must give children.
 
+- [ContainerWithMostWater](src/main/java/world/coding/challenges/interviewbit/ContainerWithMostWater.java) - Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+
  ## [GeeksForGeeks](https://www.geeksforgeeks.org/)
  
 - [LongestIncreasingSubsequenceDP3](src/main/java/world/coding/challenges/geeksforgeeks/LongestIncreasingSubsequenceDP3.java) -  find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order
