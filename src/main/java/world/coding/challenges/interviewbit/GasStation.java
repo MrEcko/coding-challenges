@@ -8,18 +8,17 @@ import java.util.List;
 public class GasStation {
     public int canCompleteCircuit(final List<Integer> A, final List<Integer> B) {
         int n = A.size();
-        if (n == 0) return -1;
         int start = 0, end = 0, total = 0, gas = 0;
         while (end < n) {
             int consumption = A.get(end) - B.get(end);
             gas += consumption;
             total += consumption;
-            if (gas >= 0) end++;
-            else {
+            if (gas<0){
                 start = end + 1;
                 end++;
                 gas = 0;
             }
+            else end++;
         }
         if (total < 0) return -1;
         else return start;
