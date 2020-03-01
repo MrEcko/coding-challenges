@@ -69,6 +69,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 ## [Interviewbit](https://www.interviewbit.com/)
 - [ThreeSum](src/main/java/world/coding/challenges/interviewbit/ThreeSum.java) - Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
+- [FindDuplicateInArray](src/main/java/world/coding/challenges/interviewbit/FindDuplicateInArray.java) - Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.
 
 - [RotateMatrix](src/main/java/world/coding/challenges/interviewbit/RotateMatrix.java) - Rotate an image (2d matrix) by 90 degrees (clockwise)
 
