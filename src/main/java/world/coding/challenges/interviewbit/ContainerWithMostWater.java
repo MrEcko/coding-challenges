@@ -13,7 +13,7 @@ public class ContainerWithMostWater {
 
     public int maxArea(ArrayList<Integer> A) {
         int n = A.size();
-        if (n<1) return 0;
+        if (n==1) return 0;
         int start = 0, end = n - 1;
         int area = -1;
         while (start < end) {
