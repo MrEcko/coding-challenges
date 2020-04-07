@@ -67,7 +67,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 ### 30-Day LeetCoding Challenge
 - [Single Number](src/main/java/world/coding/challenges/leetcode/challenge30days/SingleNumber.java) - Given a non-empty array of integers, every element appears twice except for one. Find that single one.
-- [HappyNumber](src/main/java/world/coding/challenges/leetcode/challenge30days/HappyNumber.java) - happy number if sum of the squares of its digits (repeat the process until the number equals 1 or infinite) 
+- [HappyNumber](src/main/java/world/coding/challenges/leetcode/challenge30days/HappyNumber.java) - happy number if sum of the squares of its digits (repeat the process until the number equals 1 or infinite)
+- [MaximumSubarray](src/main/java/world/coding/challenges/leetcode/challenge30days/MaximumSubarray.java) - Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum. 
 
 
 ## [Codesignal](https://codesignal.com/)
