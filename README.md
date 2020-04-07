@@ -68,7 +68,8 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 ### 30-Day LeetCoding Challenge
 - [Single Number](src/main/java/world/coding/challenges/leetcode/challenge30days/SingleNumber.java) - Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 - [HappyNumber](src/main/java/world/coding/challenges/leetcode/challenge30days/HappyNumber.java) - happy number if sum of the squares of its digits (repeat the process until the number equals 1 or infinite)
-- [MaximumSubarray](src/main/java/world/coding/challenges/leetcode/challenge30days/MaximumSubarray.java) - Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum. 
+- [MaximumSubarray](src/main/java/world/coding/challenges/leetcode/challenge30days/MaximumSubarray.java) - Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+- [MoveZeroes](src/main/java/world/coding/challenges/leetcode/challenge30days/MoveZeroes.java) - Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 
 ## [Codesignal](https://codesignal.com/)
@@ -108,6 +109,11 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
  
 - [LongestIncreasingSubsequenceDP3](src/main/java/world/coding/challenges/geeksforgeeks/LongestIncreasingSubsequenceDP3.java) -  find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order
 - [MinCostPathDP6](src/main/java/world/coding/challenges/geeksforgeeks/MinCostPathDP6.java) - Given a cost matrix cost[][] and a position (m, n) in cost[][], write a function that returns cost of minimum cost path to reach (m, n) from (0, 0). 
+ 
+ 
+ TODO
+ - [MaximumSubarray](src/main/java/world/coding/challenges/leetcode/challenge30days/MaximumSubarray.java) find divide and conquer approach
+ 
  
 # System design
 
