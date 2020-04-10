@@ -7,10 +7,12 @@ import java.util.List;
 public class BestTimeToBuyAndSellStockII {
 
     public int maxProfit(int[] prices) {
-        return maxProfitUtil(prices, 0);
+        int[] computedMaxProfits = new int[prices.length+1];
+        Arrays.fill(computedMaxProfits, -1);
+        return maxProfitUtil(prices, 0,computedMaxProfits);
     }
 
-    public int maxProfitUtil(int[] prices, int start) {
+    public int maxProfitUtil(int[] prices, int start, int[] computedMaxProfits) {
         int maxProfit = 0;
         if (prices.length - start < 2)
             return maxProfit;
@@ -18,10 +20,24 @@ public class BestTimeToBuyAndSellStockII {
         for (int buyingDay = start; buyingDay < prices.length - 1; buyingDay++) {
             List<Integer> profitableSellingDays = findProfitableSellingDays(buyingDay, prices);
             if (profitableSellingDays.size() == 0) {
-                maxProfit = Math.max(maxProfit,maxProfitUtil(prices, buyingDay + 1));
+                int maxProfitOnRemainingDays;
+                if (computedMaxProfits[buyingDay + 1] == -1){
+                    maxProfitOnRemainingDays = maxProfitUtil(prices, buyingDay + 1,computedMaxProfits);
+                    computedMaxProfits[buyingDay + 1] = maxProfitOnRemainingDays;
+                } else {
+                    maxProfitOnRemainingDays = computedMaxProfits[buyingDay + 1];
+                }
+                maxProfit = Math.max(maxProfit, maxProfitOnRemainingDays);
             } else {
                 for (int profitableSellingDay : profitableSellingDays) {
-                    int profit = prices[profitableSellingDay] - prices[buyingDay] + maxProfitUtil(prices, profitableSellingDay + 1);
+                    int maxProfitOnRemainingDays;
+                    if (computedMaxProfits[profitableSellingDay + 1] == -1){
+                        maxProfitOnRemainingDays = maxProfitUtil(prices, profitableSellingDay + 1,computedMaxProfits);
+                        computedMaxProfits[profitableSellingDay + 1] = maxProfitOnRemainingDays;
+                    } else{
+                        maxProfitOnRemainingDays = computedMaxProfits[profitableSellingDay + 1];
+                    }
+                    int profit = prices[profitableSellingDay] - prices[buyingDay] + maxProfitOnRemainingDays;
                     maxProfit = Math.max(maxProfit, profit);
                 }
             }
