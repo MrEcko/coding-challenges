@@ -14,7 +14,7 @@ public class BestTimeToBuyAndSellStockII {
         }
         return maxProfit;
 
-//        recursive:
+//        recursive: (need explicit stack or the iterative solution above for it to work with big numbers)
 //        int[] computedMaxProfits = new int[prices.length+1];
 //        Arrays.fill(computedMaxProfits, -1);
 //        return maxProfitUtil(prices, 0,computedMaxProfits);
