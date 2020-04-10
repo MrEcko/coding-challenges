@@ -1,42 +1,39 @@
 package world.coding.challenges.leetcode.challenge30days;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class BestTimeToBuyAndSellStockII {
 
     public int maxProfit(int[] prices) {
-        int maxP = 0;
-        for (int i = 0; i < prices.length - 1; i++) {
-            maxP = Math.max(maxP, maxProfitUtil(prices, i));
-        }
-        return maxP;
+        return maxProfitUtil(prices, 0);
     }
 
     public int maxProfitUtil(int[] prices, int start) {
         int maxProfit = 0;
-        int n = prices.length;
-        if (n - start < 2)
+        if (prices.length - start < 2)
             return maxProfit;
-        int buy = prices[start];
-        List<Integer> profitableSellingDays = findProfitableSellingDays(buy, prices, start + 1, n);
-        if (profitableSellingDays.size() == 0) {
-            return 0;
-        } else {
-            for (int profitableSellingDay : profitableSellingDays) {
-                int sell = prices[profitableSellingDay];
-                int profit = sell - buy + maxProfitUtil(prices, profitableSellingDay + 1);
-                maxProfit = Math.max(maxProfit, profit);
+
+        for (int buyingDay = start; buyingDay < prices.length - 1; buyingDay++) {
+            List<Integer> profitableSellingDays = findProfitableSellingDays(buyingDay, prices);
+            if (profitableSellingDays.size() == 0) {
+                maxProfit = Math.max(maxProfit,maxProfitUtil(prices, buyingDay + 1));
+            } else {
+                for (int profitableSellingDay : profitableSellingDays) {
+                    int profit = prices[profitableSellingDay] - prices[buyingDay] + maxProfitUtil(prices, profitableSellingDay + 1);
+                    maxProfit = Math.max(maxProfit, profit);
+                }
             }
         }
-
         return maxProfit;
     }
 
-    private List<Integer> findProfitableSellingDays(int buy, int[] prices, int start, int end) {
+    private List<Integer> findProfitableSellingDays(int buyingDay, int[] prices) {
         List<Integer> output = new ArrayList<>();
-        for (int i = start; i < end; i++) {
-            if (prices[i] > buy) output.add(i);
+        int buyingPrice = prices[buyingDay];
+        for (int i = buyingDay+1; i < prices.length; i++) {
+            if (prices[i] > buyingPrice) output.add(i);
         }
         return output;
     }
