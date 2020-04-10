@@ -16,16 +16,16 @@ public class BestTimeToBuyAndSellStockII {
     public int maxProfitUtil(int[] prices, int start) {
         int maxProfit = 0;
         int n = prices.length;
-        if (n-start < 2)
+        if (n - start < 2)
             return maxProfit;
         int buy = prices[start];
         List<Integer> profitableSellingDays = findProfitableSellingDays(buy, prices, start + 1, n);
         if (profitableSellingDays.size() == 0) {
-            maxProfit = maxProfitUtil(prices, start+1);
+            return 0;
         } else {
             for (int profitableSellingDay : profitableSellingDays) {
                 int sell = prices[profitableSellingDay];
-                int profit = sell - buy + maxProfitUtil(prices,profitableSellingDay+1);
+                int profit = sell - buy + maxProfitUtil(prices, profitableSellingDay + 1);
                 maxProfit = Math.max(maxProfit, profit);
             }
         }
