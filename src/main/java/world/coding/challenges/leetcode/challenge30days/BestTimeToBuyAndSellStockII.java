@@ -21,12 +21,15 @@ public class BestTimeToBuyAndSellStockII {
             List<Integer> profitableSellingDays = findProfitableSellingDays(buyingDay, prices);
             if (profitableSellingDays.size() == 0) {
                 int maxProfitOnRemainingDays;
-                if (computedMaxProfits[buyingDay + 1] == -1){
-                    maxProfitOnRemainingDays = maxProfitUtil(prices, buyingDay + 1,computedMaxProfits);
-                    computedMaxProfits[buyingDay + 1] = maxProfitOnRemainingDays;
+                int nextBuyingDay = findNextBuyingDay(buyingDay, prices);
+                if (nextBuyingDay == -1) break; //no more profits to be made
+                if (computedMaxProfits[nextBuyingDay] == -1){
+                    maxProfitOnRemainingDays = maxProfitUtil(prices, nextBuyingDay,computedMaxProfits);
+                    computedMaxProfits[nextBuyingDay] = maxProfitOnRemainingDays;
                 } else {
-                    maxProfitOnRemainingDays = computedMaxProfits[buyingDay + 1];
+                    maxProfitOnRemainingDays = computedMaxProfits[nextBuyingDay];
                 }
+
                 maxProfit = Math.max(maxProfit, maxProfitOnRemainingDays);
             } else {
                 for (int profitableSellingDay : profitableSellingDays) {
@@ -43,6 +46,20 @@ public class BestTimeToBuyAndSellStockII {
             }
         }
         return maxProfit;
+    }
+
+    /**
+     * With this optimisation there is no need to keep recomputing predictable outcomes
+     * @return the first decreasing buying price or -1
+     */
+    private int findNextBuyingDay(int buyingDay, int[] prices) {
+        int buyingPrice = prices[buyingDay];
+        for (int i=buyingDay+1; i < prices.length; i++){
+            if (prices[i] < buyingPrice){
+                return i;
+            }
+        }
+        return -1;
     }
 
     private List<Integer> findProfitableSellingDays(int buyingDay, int[] prices) {
