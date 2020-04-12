@@ -72,7 +72,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [MoveZeroes](src/main/java/world/coding/challenges/leetcode/challenge30days/MoveZeroes.java) - Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 - [BestTimeToBuyAndSellStockII](src/main/java/world/coding/challenges/leetcode/challenge30days/BestTimeToBuyAndSellStockII.java)
 - [GroupAnagrams](src/main/java/world/coding/challenges/leetcode/challenge30days/GroupAnagrams.java) - Given an array of strings, group anagrams together. 
-
+- [CountingElements](src/main/java/world/coding/challenges/leetcode/challenge30days/CountingElements.java) - Given an integer array arr, count element x such that x + 1 is also in arr.
 
 ## [Codesignal](https://codesignal.com/)
 
