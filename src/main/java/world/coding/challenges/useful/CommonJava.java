@@ -25,7 +25,17 @@ public class CommonJava {
         int[] ints = list.stream().mapToInt(i -> i).toArray();
     }
 
+    public static double getRandomDoubleBetweenRange(double min, double max){
+        return (Math.random()*((max-min)+1))+min;
+    }
+
     public static void main(String[] args) {
+
+        int n = 3;
+        int[] dp = {1,4,20};
+        int key = 13;
+        Arrays.sort(dp,0,n);
+        int index = Arrays.binarySearch(dp, 0, n, key); // must be sorted
         List<Integer> l = new LinkedList<>();
         l.add(3);
         l.add(2);
@@ -41,7 +51,7 @@ public class CommonJava {
 
         int[] A = new int[3];
         // watch out for subsequent calls - do it just once at the end and on the spot?
-        Arrays.fill(A, 0);
+        Arrays.fill(A, 1);
         System.out.println(Arrays.toString(A));
 
         NUCLEOTIDE_IMPACT_FACTORS.get('c');
@@ -175,15 +185,29 @@ public class CommonJava {
      * https://en.wikipedia.org/wiki/Prefix_sum
      */
     class PrefixSums {
-        int[] prefixSum(int input[]) {
+        int[] prefixSum(int[] input) {
             int[] prefixSum = new int[input.length + 1];
             for (int i = 1; i < input.length + 1; i++) {
                 prefixSum[i] = prefixSum[i - 1] + input[i - 1];
             }
             return prefixSum;
         }
+
+        int countTotal(int[] prefixSum, int x, int y) {
+            return prefixSum[y + 1] - prefixSum[x];
+        }
     }
 
+    /**
+     * A Red-Black tree based NavigableMap implementation
+     *
+     * Both TreeMap and TreeSet are slower than there Hash counter part like HashSet and HashMap
+     * and instead of providing constant time performance for add, remove and get operation
+     * they provide performance in O(log(n)) order.
+     *
+     *  TreeSet stores only one object while TreeMap uses two objects called key and Value.
+     *  Objects in TreeSet are sorted while keys in TreeMap remain in sorted Order.
+     */
     static void treeMap(){
         TreeMap<Integer, Integer> A = new TreeMap<Integer, Integer>(); // O(1) declaration which declares an empty tree map.
         int K=0,V=0, x=0;
@@ -272,6 +296,7 @@ public class CommonJava {
 
 
 
+        Queue<Integer> maxHeap3 = new PriorityQueue<>(Collections.reverseOrder());
         PriorityQueue<Integer> maxHeap2 = new PriorityQueue<>((Integer o1, Integer o2) -> (- Integer.compare(o1,o2)));
 
         maxHeap2.add(1); //add element to the queue. O(log n)
@@ -363,7 +388,7 @@ public class CommonJava {
 
     static void sorting(){
         int[] arr = {10,3,-3,1};
-        java.util.Arrays.sort(arr);
+        Arrays.sort(arr);
         List<String> list = new ArrayList<>();
         list.add("x");// O(1)
         list.addAll(new ArrayList<>());
@@ -375,6 +400,11 @@ public class CommonJava {
 
 //        All elements in the list must implement the {@link Comparable} interface
         Collections.sort(list);// works for objects Collections like ArrayList, LinkedList, etc.
+        list.sort(null);
+        Comparator<String> byName =
+            (String o1, String o2)->o1.compareTo(o2);
+        Comparator<String> byNameShort = String::compareTo;
+        list.sort(byName);
     }
 
     static void copyArray(){
@@ -435,6 +465,13 @@ public class CommonJava {
     }
 
 
+    void matrix(){
+        int n =0;
+        int memo[][] = new int[n + 1][n];
+        for (int[] l : memo) {
+            Arrays.fill(l, -1);
+        }
+    }
     void cursor(){
 //        Iterator vs ListIterator
 //        - both being cursor, Iterator traverses elements only forwards
