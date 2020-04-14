@@ -75,6 +75,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [CountingElements](src/main/java/world/coding/challenges/leetcode/challenge30days/CountingElements.java) - Given an integer array arr, count element x such that x + 1 is also in arr.
 - [MiddleOfLinkedList](src/main/java/world/coding/challenges/leetcode/challenge30days/MiddleOfLinkedList.java) - Given a non-empty, singly linked list with head node head, return a middle node of linked list.
 - [BackspaceStringCompare](src/main/java/world/coding/challenges/leetcode/challenge30days/BackspaceStringCompare.java) - Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
+- [MinStack](src/main/java/world/coding/challenges/leetcode/challenge30days/MinStack.java) - Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 ## [Codesignal](https://codesignal.com/)
 
