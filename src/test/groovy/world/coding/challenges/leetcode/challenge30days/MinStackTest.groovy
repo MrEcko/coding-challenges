@@ -1,16 +1,16 @@
 package world.coding.challenges.leetcode.challenge30days
 
 
-import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
 
 class MinStackTest extends Specification {
-    @Shared
-    private static MinStack solution = new MinStack()
 
     @Unroll
     def "MinStack"() {
+        given:
+        MinStack solution = new MinStack()
+
         expect:
         for (int i = 0; i<ops.size(); i++){
             switch (ops[i]) {
