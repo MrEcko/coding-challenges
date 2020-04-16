@@ -77,6 +77,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [BackspaceStringCompare](src/main/java/world/coding/challenges/leetcode/challenge30days/BackspaceStringCompare.java) - Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 - [MinStack](src/main/java/world/coding/challenges/leetcode/challenge30days/MinStack.java) - Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 - [DiameterOfBinaryTree](src/main/java/world/coding/challenges/leetcode/challenge30days/DiameterOfBinaryTree.java) - Given a binary tree, you need to compute the length of the diameter of the tree.
+- [LastStoneWeight](src/main/java/world/coding/challenges/leetcode/challenge30days/LastStoneWeight.java) - choose the two heaviest stones and smash them together
 
 ## [Codesignal](https://codesignal.com/)
 
