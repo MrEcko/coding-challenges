@@ -78,6 +78,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [MinStack](src/main/java/world/coding/challenges/leetcode/challenge30days/MinStack.java) - Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 - [DiameterOfBinaryTree](src/main/java/world/coding/challenges/leetcode/challenge30days/DiameterOfBinaryTree.java) - Given a binary tree, you need to compute the length of the diameter of the tree.
 - [LastStoneWeight](src/main/java/world/coding/challenges/leetcode/challenge30days/LastStoneWeight.java) - choose the two heaviest stones and smash them together
+- [ContiguousArray](src/main/java/world/coding/challenges/leetcode/challenge30days/ContiguousArray.java) - Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
 
 ## [Codesignal](https://codesignal.com/)
 
