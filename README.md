@@ -82,6 +82,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [PerformStringShifts](src/main/java/world/coding/challenges/leetcode/challenge30days/PerformStringShifts.java) - given a string s containing lowercase English letters, and a matrix shift perform string shifts
 - [ProductOfArrayExceptSelf](src/main/java/world/coding/challenges/leetcode/challenge30days/ProductOfArrayExceptSelf.java) - Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 - [ValidParenthesisString](src/main/java/world/coding/challenges/leetcode/challenge30days/ValidParenthesisString.java) - Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid
+- [NumberOfIslands](src/main/java/world/coding/challenges/leetcode/challenge30days/NumberOfIslands.java) - Given a 2d grid map of '1's (land) and '0's (water), count the number of islands.
 
 ## [Codesignal](https://codesignal.com/)
 
