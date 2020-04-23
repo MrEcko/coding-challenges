@@ -84,6 +84,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [ValidParenthesisString](src/main/java/world/coding/challenges/leetcode/challenge30days/ValidParenthesisString.java) - Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid
 - [NumberOfIslands](src/main/java/world/coding/challenges/leetcode/challenge30days/NumberOfIslands.java) - Given a 2d grid map of '1's (land) and '0's (water), count the number of islands.
 - [MinimumPathSum](src/main/java/world/coding/challenges/leetcode/challenge30days/MinimumPathSum.java) - Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+- [SearchInRotatedSortedArray](src/main/java/world/coding/challenges/leetcode/challenge30days/SearchInRotatedSortedArray.java) - an array sorted in ascending order is rotated at some pivot unknown, search in O(log n)
 
 ## [Codesignal](https://codesignal.com/)
 
