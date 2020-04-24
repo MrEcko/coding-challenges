@@ -16,8 +16,8 @@ class ConstructBinarySearchTreeFromPreorderTraversalTest extends Specification {
         new BinaryTree(output).printLevelOrderIterative() == expectedOut as Integer[]
 
         where:
-        input              || expectedOut
-        [8,5,1,7,10,12] || [8,5,10,1,7,null,12]
+        input                || expectedOut
+        [8, 5, 1, 7, 10, 12] || [8, 5, 10, 1, 7, null, 12]
     }
 
 }

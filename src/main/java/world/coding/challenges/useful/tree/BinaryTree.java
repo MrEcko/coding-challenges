@@ -187,16 +187,22 @@ public class BinaryTree {
         while (!nodes.isEmpty())
         {
             TreeNode tempNode = nodes.poll();
+            if (tempNode==null){
+                output.add(null);
+                continue;
+            }
             output.add(tempNode.value);
             System.out.print(tempNode.value + " ");
 
+            boolean isLeaf = false;
+            if (tempNode.left == null && tempNode.right == null) isLeaf = true;
             /*Enqueue left child */
-            if (tempNode.left != null) {
+            if (!isLeaf){
                 nodes.add(tempNode.left);
             }
 
             /*Enqueue right child */
-            if (tempNode.right != null) {
+            if (!isLeaf){
                 nodes.add(tempNode.right);
             }
         }
