@@ -1,19 +1,24 @@
 package world.coding.challenges.useful.tree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
-class BinaryTree {
+public class BinaryTree {
     // Root of Binary Tree
-    Node root;
+    TreeNode root;
 
-    BinaryTree() {
+    public BinaryTree() {
         root = null;
+    }
+    public BinaryTree(TreeNode root) {
+        this.root = root;
     }
 
     /* Given a binary tree, print its nodes according to the
       "bottom-up" postorder traversal. */
-    void printPostorder(Node node) {
+    void printPostorder(TreeNode node) {
         if (node == null)
             return;
 
@@ -28,7 +33,7 @@ class BinaryTree {
     }
 
     /* Given a binary tree, print its nodes in inorder*/
-    void printInorder(Node node) {
+    void printInorder(TreeNode node) {
         if (node == null)
             return;
 
@@ -45,7 +50,7 @@ class BinaryTree {
 
 
     /* Given a binary tree, print its nodes in preorder*/
-    void printPreorder(Node node) {
+    void printPreorder(TreeNode node) {
         if (node == null)
             return;
 
@@ -76,7 +81,7 @@ class BinaryTree {
     /* Compute the "height" of a tree -- the number of
     nodes along the longest path from the root node
     down to the farthest leaf node.*/
-    int height(Node root)
+    int height(TreeNode root)
     {
         if (root == null)
             return 0;
@@ -93,9 +98,9 @@ class BinaryTree {
         }
     }
 
-    private Node addRecursive(Node current, int value) {
+    private TreeNode addRecursive(TreeNode current, int value) {
         if (current == null) {
-            return new Node(value);
+            return new TreeNode(value);
         }
 
         if (value < current.value) {
@@ -114,7 +119,7 @@ class BinaryTree {
         root = addRecursive(root, value);
     }
 
-    private boolean containsNodeRecursive(Node current, int value) {
+    private boolean containsNodeRecursive(TreeNode current, int value) {
         if (current == null) {
             return false;
         }
@@ -131,7 +136,7 @@ class BinaryTree {
     }
 
 
-    private Node deleteRecursive(Node current, int value) {
+    private TreeNode deleteRecursive(TreeNode current, int value) {
         if (current == null) {
             return null;
         }
@@ -169,18 +174,20 @@ class BinaryTree {
      *
      *  Time Complexity: O(n) where n is number of nodes in the binary tree
      */
-    void printLevelOrderIterative()
+    public Integer[] printLevelOrderIterative()
     {
 
         if (root == null) {
-            return;
+            return new Integer[0];
         }
+        List<Integer> output = new ArrayList<>();
 
-        Queue<Node> nodes = new LinkedList<Node>();
+        Queue<TreeNode> nodes = new LinkedList<TreeNode>();
         nodes.add(root);
         while (!nodes.isEmpty())
         {
-            Node tempNode = nodes.poll();
+            TreeNode tempNode = nodes.poll();
+            output.add(tempNode.value);
             System.out.print(tempNode.value + " ");
 
             /*Enqueue left child */
@@ -193,6 +200,7 @@ class BinaryTree {
                 nodes.add(tempNode.right);
             }
         }
+        return output.toArray(new Integer[0]);
     }
 
 // =====================================================================================================================================
@@ -218,7 +226,7 @@ class BinaryTree {
      * Print nodes at the given level
      * time complexity of printLevelOrder() is O(n) + O(n-1) + O(n-2) + .. + O(1) which is O(n^2)
      */
-    void printGivenLevel (Node root ,int level)
+    void printGivenLevel (TreeNode root , int level)
     {
         if (root == null)
             return;

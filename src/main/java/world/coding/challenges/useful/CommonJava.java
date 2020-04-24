@@ -76,6 +76,8 @@ public class CommonJava {
             .boxed()
             .collect(Collectors.toSet());
 
+        int[] ints = integers.stream().mapToInt(Integer::intValue).toArray();
+
         Optional<Integer> maxOptional = IntStream.of(A)
             .boxed()
             .max(Integer::compareTo);

@@ -8,11 +8,11 @@ public class TreeTraversal {
     public static void main(String args[])
     {
         BinaryTree tree = new BinaryTree();
-        tree.root= new Node(1);
-        tree.root.left= new Node(2);
-        tree.root.right= new Node(3);
-        tree.root.left.left= new Node(4);
-        tree.root.left.right= new Node(5);
+        tree.root= new TreeNode(1);
+        tree.root.left= new TreeNode(2);
+        tree.root.right= new TreeNode(3);
+        tree.root.left.left= new TreeNode(4);
+        tree.root.left.right= new TreeNode(5);
 
         System.out.println("Level order traversal (breadth first) of binary tree is ");
         tree.printLevelOrderRecursive();
