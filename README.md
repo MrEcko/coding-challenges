@@ -87,6 +87,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 - [SearchInRotatedSortedArray](src/main/java/world/coding/challenges/leetcode/challenge30days/SearchInRotatedSortedArray.java) - an array sorted in ascending order is rotated at some pivot unknown, search in O(log n)
 - [ConstructBinarySearchTreeFromPreorderTraversal](src/main/java/world/coding/challenges/leetcode/challenge30days/ConstructBinarySearchTreeFromPreorderTraversal.java) - Return the root node of a binary search tree that matches the given preorder traversal.
 - [LeftmostColumnWithAtLeastAOne](src/main/java/world/coding/challenges/leetcode/challenge30days/LeftmostColumnWithAtLeastAOne.java) - Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it
+- [SubarraySumEqualsK](src/main/java/world/coding/challenges/leetcode/challenge30days/SubarraySumEqualsK.java) - Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.
 
 ## [Codesignal](https://codesignal.com/)
 
