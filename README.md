@@ -64,6 +64,7 @@ TODO https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_inter
 
 #### Medium:
 - [PreviousPermutationOneSwap](src/main/java/world/coding/challenges/leetcode/medium/PreviousPermutationOneSwap.java) - Given an array A of positive integers (not necessarily distinct), return the lexicographically largest permutation that is smaller than A, that can be made with one swap.
+- [AccountsMerge](src/main/java/world/coding/challenges/leetcode/medium/AccountsMerge.java)
 
 ### 30-Day LeetCoding Challenge
 - [Single Number](src/main/java/world/coding/challenges/leetcode/challenge30days/SingleNumber.java) - Given a non-empty array of integers, every element appears twice except for one. Find that single one.
