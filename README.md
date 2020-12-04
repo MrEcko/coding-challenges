@@ -3,6 +3,9 @@
 
 World class coding challenges to master
 
+![Build](https://github.com/MrEcko/coding-challenges/workflows/Java%20CI%20with%20Gradle/badge.svg)
+
+
 ## [Codility](https://app.codility.com/programmers/lessons/)
 
 - [BinaryGap](src/main/java/world/coding/challenges/codility/BinaryGap.java) - Find the longest sequence of zeros in binary representation of an integer.
