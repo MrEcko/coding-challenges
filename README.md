@@ -4,7 +4,7 @@
 World class coding challenges to master
 
 ![Build](https://github.com/MrEcko/coding-challenges/workflows/Java%20CI%20with%20Gradle/badge.svg)
-
+[![Travis CI Build Status](https://travis-ci.com/MrEcko/coding-challenges.svg?branch=master)](https://travis-ci.com/MrEcko/coding-challenges)
 
 ## [Codility](https://app.codility.com/programmers/lessons/)
 
